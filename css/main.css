@@ -1,0 +1,267 @@
+.row {
+  *zoom: 1;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.pgspan-0-5, .pgspan-0-4, .pgspan-0-3, .pgspan-0-2, .pgspan-0-1, .pgspan-1-5, .pgspan-1-4, .pgspan-1-3, .pgspan-1-2, .pgspan-2-5, .pgspan-2-4, .pgspan-2-3, .pgspan-3-5, .pgspan-3-4, .pgspan-4-5 {
+  float: left;
+  min-height: 1px;
+}
+
+.pgspan-0-5 {
+  width: 100%;
+}
+
+.pgspan-0-4 {
+  width: 50%;
+}
+
+.pgspan-0-3 {
+  width: 43%;
+}
+
+.pgspan-0-2 {
+  width: 28%;
+}
+
+.pgspan-0-1 {
+  width: 10%;
+}
+
+.pgspan-1-5 {
+  width: 90%;
+}
+
+.pgspan-1-4 {
+  width: 40%;
+}
+
+.pgspan-1-3 {
+  width: 33%;
+}
+
+.pgspan-1-2 {
+  width: 18%;
+}
+
+.pgspan-2-5 {
+  width: 72%;
+}
+
+.pgspan-2-4 {
+  width: 22%;
+}
+
+.pgspan-2-3 {
+  width: 15%;
+}
+
+.pgspan-3-5 {
+  width: 57%;
+}
+
+.pgspan-3-4 {
+  width: 7%;
+}
+
+.pgspan-4-5 {
+  width: 50%;
+}
+
+.grid {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 0, 0, 0.3);
+  height: 100%;
+}
+
+@media (max-width: 767px) {
+  .wrapper {
+    padding: 20px 24px!important;
+  }
+
+  .pgspan-0-5, .pgspan-0-4, .pgspan-0-3, .pgspan-0-2, .pgspan-0-1, .pgspan-1-5, .pgspan-1-4, .pgspan-1-3, .pgspan-1-2, .pgspan-2-5, .pgspan-2-4, .pgspan-2-3, .pgspan-3-5, .pgspan-3-4, .pgspan-4-5 {
+    float: none;
+    min-height: none;
+    width: 100%;
+  }
+}
+body, html {
+  position: relative;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.5em;
+  color: #333;
+  background-color: #F2F2F2;
+}
+
+.wrapper {
+  margin: 0 auto;
+  text-align: left;
+  padding: 20px 0 48px;
+  max-width: 1322px;
+  clear: both;
+}
+
+header {
+  background-color: #023440;
+  margin-bottom: 48px;
+}
+header .wrapper {
+  border-bottom: none;
+  padding: 0 20px;
+}
+
+footer {
+  background-color: #111;
+}
+footer p {
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Open Sans Condensed', sans-serif;
+  line-height: 1;
+  padding-right: 24px;
+}
+
+h1 {
+  margin-top: 48px;
+  margin-bottom: 4px;
+  color: #F2F2F2;
+}
+
+h2 {
+  margin-top: 4px;
+  margin-bottom: 40px;
+  color: #F2F2F2;
+}
+
+h3 {
+  color: #1D4859;
+}
+
+p, ul {
+  font-size: 0.75em;
+  line-height: 1.8;
+  padding-right: 24px;
+}
+
+a {
+  color: #1D4859;
+  text-decoration: none;
+  border-bottom: 1px solid #d8d8d8;
+}
+a:hover {
+  border-bottom-color: #1D4859;
+}
+
+.label {
+  color: #fff;
+  font-weight: 300;
+  padding: 6px 12px;
+  background-color: #023440;
+  font-size: 1em;
+}
+
+.logo {
+  height: 100px;
+  margin-top: 48px;
+  text-align: center;
+}
+
+.grid .container {
+  background-color: rgba(255, 0, 0, 0.2);
+  border-bottom: none;
+  height: 100%;
+  padding-top: 0;
+}
+.grid [class*="pgspan"] {
+  height: 100%;
+}
+.grid .grid-element {
+  height: 100%;
+  font-size: 0.5em;
+  color: #f00;
+  border-right: 1px solid #f00;
+  padding-left: 4px;
+  padding-top: 8px;
+}
+.grid .pgspan-0-1 .grid-element {
+  border-left: 1px solid #f00;
+}
+.grid .pgspan-0-5 {
+  display: none;
+}
+.grid .pgspan-0-5 .grid-element {
+  border-left: 1px solid #f00;
+}
+
+.box {
+  margin: 0 2px;
+  background-color: #e0e0e0;
+  font-size: 0.5em;
+  text-align: center;
+  padding: 24px 0;
+}
+
+.highlight {
+  background-color: #e0e0e0;
+  padding: 1px 2px;
+}
+
+.btn {
+  -webkit-border-radius: 32px;
+  -moz-border-radius: 32px;
+  -ms-border-radius: 32px;
+  -o-border-radius: 32px;
+  border-radius: 32px;
+  padding: 8px 32px;
+  color: #fff;
+  font-family: 'Open Sans Condensed';
+  font-size: 1.4em;
+  border: 1px solid #b5b5b5;
+  background-color: #b5b5b5;
+}
+.btn:hover {
+  border: 1px solid #aaa;
+  background-color: #aaa;
+}
+.btn:active {
+  border: 1px solid #999;
+  background-color: #999;
+}
+
+.btn-primary {
+  border: 1px solid #8DA681;
+  background-color: #8DA681;
+}
+.btn-primary:hover {
+  border: 1px solid #6E8763;
+  background-color: #6E8763;
+}
+.btn-primary:active {
+  border: 1px solid #4E6345;
+  background-color: #4E6345;
+}
+
+@media (max-width: 767px) {
+  .grid [class*="pgspan"] {
+    display: none;
+  }
+  .grid .pgspan-0-5 {
+    display: block!important;
+  }
+}

@@ -1,0 +1,95 @@
+.row {
+  *zoom: 1;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.pgspan-0-5, .pgspan-0-4, .pgspan-0-3, .pgspan-0-2, .pgspan-0-1, .pgspan-1-5, .pgspan-1-4, .pgspan-1-3, .pgspan-1-2, .pgspan-2-5, .pgspan-2-4, .pgspan-2-3, .pgspan-3-5, .pgspan-3-4, .pgspan-4-5 {
+  float: left;
+  min-height: 1px;
+}
+
+.pgspan-0-5 {
+  width: 100%;
+}
+
+.pgspan-0-4 {
+  width: 50%;
+}
+
+.pgspan-0-3 {
+  width: 43%;
+}
+
+.pgspan-0-2 {
+  width: 28%;
+}
+
+.pgspan-0-1 {
+  width: 10%;
+}
+
+.pgspan-1-5 {
+  width: 90%;
+}
+
+.pgspan-1-4 {
+  width: 40%;
+}
+
+.pgspan-1-3 {
+  width: 33%;
+}
+
+.pgspan-1-2 {
+  width: 18%;
+}
+
+.pgspan-2-5 {
+  width: 72%;
+}
+
+.pgspan-2-4 {
+  width: 22%;
+}
+
+.pgspan-2-3 {
+  width: 15%;
+}
+
+.pgspan-3-5 {
+  width: 57%;
+}
+
+.pgspan-3-4 {
+  width: 7%;
+}
+
+.pgspan-4-5 {
+  width: 50%;
+}
+
+.grid {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 0, 0, 0.3);
+  height: 100%;
+}
+
+@media (max-width: 767px) {
+  .wrapper {
+    padding: 20px 24px!important;
+  }
+
+  .pgspan-0-5, .pgspan-0-4, .pgspan-0-3, .pgspan-0-2, .pgspan-0-1, .pgspan-1-5, .pgspan-1-4, .pgspan-1-3, .pgspan-1-2, .pgspan-2-5, .pgspan-2-4, .pgspan-2-3, .pgspan-3-5, .pgspan-3-4, .pgspan-4-5 {
+    float: none;
+    min-height: none;
+    width: 100%;
+  }
+}

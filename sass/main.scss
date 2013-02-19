@@ -232,12 +232,14 @@ a {
 	}
 }
 
-.hide-grid-toggle {
-	position: absolute;
+.hide-grid-toggle, .hide-grid-toggle:hover {
+	position: fixed;
 	top: 32px;
 	right: 32px;
 	padding: 8px 24px;
 	font-size: 18px;
+	background-color: #888;
+	border-color: #888;
 }
 
 @media (max-width: 767px) {

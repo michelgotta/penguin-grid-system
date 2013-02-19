@@ -105,55 +105,6 @@ a {
 	text-align: center;
 }
 
-.grid {
-	.container {
-		background-color: rgba(#f00, 0.2);
-		border-bottom: none;
-		height: 100%;
-		padding-top: 0;
-	}
-
-	[class*="pgspan"] {
-		height: 100%;
-	}
-
-	.grid-element {
-		height: 100%;
-		font-size: 0.5em;
-		color: #f00;
-		border-right: 1px solid #f00;
-		padding-left: 4px;
-		padding-top: 8px;
-		
-	}
-	
-	.pgspan-0-1 {
-		.grid-element {
-			border-left: 1px solid #f00;
-		}
-	}
-	
-	.pgspan-0-5 {
-		display: none;
-		.grid-element {
-			border-left: 1px solid #f00;
-		}
-	}
-}
-
-.box {
-	margin: 0 2px;
-	background-color: #e0e0e0;
-	font-size: 0.5em;
-	text-align: center;
-	padding: 24px 0;
-}
-
-.highlight {
-	background-color: #e0e0e0;
-	padding: 1px 2px;
-}
-
 .btn {
 	@include border-radius(32px);
 	padding: 8px 32px ;
@@ -191,6 +142,104 @@ a {
 	}
 }
 
+
+.grid {
+	.container {
+		background-color: rgba(#f00, 0.2);
+		border-bottom: none;
+		height: 100%;
+		padding-top: 0;
+	}
+	
+	.wrapper {
+		height: 100%;
+		padding: 0;
+	}
+
+	[class*="pgspan"] {
+		height: 100%;
+	}
+
+	.grid-element {
+		height: 100%;
+		font-size: 0.5em;
+		color: #f00;
+		border-right: 1px solid #f00;
+		padding-left: 4px;
+	}
+	
+	.pgspan-0-1 {
+		.grid-element {
+			border-left: 1px solid #f00;
+		}
+	}
+	
+	.pgspan-0-5 {
+		display: none;
+		.grid-element {
+			border-left: 1px solid #f00;
+		}
+	}
+}
+
+.box {
+	margin: 0 2px;
+	background-color: #e0e0e0;
+	font-size: 0.5em;
+	text-align: center;
+	padding: 24px 0;
+}
+
+.highlight {
+	background-color: #e0e0e0;
+	padding: 1px 2px;
+}
+
+
+
+.show-grid-toggle {
+	font-size: 16px;
+	border-bottom: none;
+	position: absolute;
+	margin-top: -68px;
+	margin-left: 12px;
+	padding: 6px 8px;
+	background-color: #B5B5B5;
+	font-family: 'Open Sans Condensed';
+	color: #fff;
+	@include single-transition(none);
+	
+	&:hover {
+		background-color: #aaa;
+	}
+	
+	&:active {
+		background-color: #888;
+	}
+	
+	.grid-icon-col {
+		width: 4px;
+		height: 18px;
+		margin-right: 1px;
+		margin-top: -4px;
+		
+		background-color: #fff;
+		@include inline-block;
+		
+		&:last-child {
+			margin-right: 4px;
+		}
+	}
+}
+
+.hide-grid-toggle {
+	position: absolute;
+	top: 32px;
+	right: 32px;
+	padding: 8px 24px;
+	font-size: 18px;
+}
+
 @media (max-width: 767px) {
 	.logo {
 		margin-top: 0;
@@ -218,6 +267,15 @@ a {
 		.pgspan-0-5 {
 			display: block!important;
 		}
-
+		
+		.wrapper {
+			padding: 0 23px!important;
+		}
+	}
+	
+	footer {
+		p {
+			text-align: center;
+		}
 	}
 }

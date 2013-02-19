@@ -195,46 +195,6 @@ a:hover {
   text-align: center;
 }
 
-.grid .container {
-  background-color: rgba(255, 0, 0, 0.2);
-  border-bottom: none;
-  height: 100%;
-  padding-top: 0;
-}
-.grid [class*="pgspan"] {
-  height: 100%;
-}
-.grid .grid-element {
-  height: 100%;
-  font-size: 0.5em;
-  color: #f00;
-  border-right: 1px solid #f00;
-  padding-left: 4px;
-  padding-top: 8px;
-}
-.grid .pgspan-0-1 .grid-element {
-  border-left: 1px solid #f00;
-}
-.grid .pgspan-0-5 {
-  display: none;
-}
-.grid .pgspan-0-5 .grid-element {
-  border-left: 1px solid #f00;
-}
-
-.box {
-  margin: 0 2px;
-  background-color: #e0e0e0;
-  font-size: 0.5em;
-  text-align: center;
-  padding: 24px 0;
-}
-
-.highlight {
-  background-color: #e0e0e0;
-  padding: 1px 2px;
-}
-
 .btn {
   -webkit-border-radius: 32px;
   -moz-border-radius: 32px;
@@ -275,6 +235,98 @@ a:hover {
   background-color: #4E6345;
 }
 
+.grid .container {
+  background-color: rgba(255, 0, 0, 0.2);
+  border-bottom: none;
+  height: 100%;
+  padding-top: 0;
+}
+.grid .wrapper {
+  height: 100%;
+  padding: 0;
+}
+.grid [class*="pgspan"] {
+  height: 100%;
+}
+.grid .grid-element {
+  height: 100%;
+  font-size: 0.5em;
+  color: #f00;
+  border-right: 1px solid #f00;
+  padding-left: 4px;
+}
+.grid .pgspan-0-1 .grid-element {
+  border-left: 1px solid #f00;
+}
+.grid .pgspan-0-5 {
+  display: none;
+}
+.grid .pgspan-0-5 .grid-element {
+  border-left: 1px solid #f00;
+}
+
+.box {
+  margin: 0 2px;
+  background-color: #e0e0e0;
+  font-size: 0.5em;
+  text-align: center;
+  padding: 24px 0;
+}
+
+.highlight {
+  background-color: #e0e0e0;
+  padding: 1px 2px;
+}
+
+.show-grid-toggle {
+  font-size: 16px;
+  border-bottom: none;
+  position: absolute;
+  margin-top: -68px;
+  margin-left: 12px;
+  padding: 6px 8px;
+  background-color: #B5B5B5;
+  font-family: 'Open Sans Condensed';
+  color: #fff;
+  -webkit-transition: none 1s;
+  -moz-transition: none 1s;
+  -ms-transition: none 1s;
+  -o-transition: none 1s;
+  transition: none 1s false;
+}
+.show-grid-toggle:hover {
+  background-color: #aaa;
+}
+.show-grid-toggle:active {
+  background-color: #888;
+}
+.show-grid-toggle .grid-icon-col {
+  width: 4px;
+  height: 18px;
+  margin-right: 1px;
+  margin-top: -4px;
+  background-color: #fff;
+  display: -moz-inline-box;
+  -moz-box-orient: vertical;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+}
+.show-grid-toggle .grid-icon-col {
+  *display: inline;
+}
+.show-grid-toggle .grid-icon-col:last-child {
+  margin-right: 4px;
+}
+
+.hide-grid-toggle {
+  position: absolute;
+  top: 32px;
+  right: 32px;
+  padding: 8px 24px;
+  font-size: 18px;
+}
+
 @media (max-width: 767px) {
   .logo {
     margin-top: 0;
@@ -300,5 +352,12 @@ a:hover {
   }
   .grid .pgspan-0-5 {
     display: block!important;
+  }
+  .grid .wrapper {
+    padding: 0 23px!important;
+  }
+
+  footer p {
+    text-align: center;
   }
 }

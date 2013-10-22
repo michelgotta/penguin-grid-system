@@ -6,9 +6,9 @@
 … named Romek Marber developed a grid system for the cover design of books published by Penguin. This is a simple grid system, inspired by »The Marber Grid«, for CSS based HTML weblayouts.
 
 Read more about it:
+[A Brief History of the »Marber Grid«:](http://thebookdesignblog.com/book-design-articles/history-marber-grid)
+[Penguin Crime](http://www.eyemagazine.com/feature/article/penguin-crime-text-in-full)
 
-A Brief History of the »Marber Grid«:
-http://thebookdesignblog.com/book-design-articles/history-marber-grid
+## [Check out the demo!](http://www.michelgotta.de/penguin-grid-system)
 
-Penguin Crime:
-http://www.eyemagazine.com/feature/article/penguin-crime-text-in-full
+![Screenshot](http://www.michelgotta.de/penguin-grid-system/screenshot.png)
